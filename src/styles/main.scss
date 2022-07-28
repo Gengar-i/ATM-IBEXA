@@ -2,6 +2,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 0;
+  color: #F9F6EE;
 }
 
 .left-side {
@@ -50,6 +51,9 @@ main {
       padding-left: 2rem;
       display: flex;
       flex-direction: column;
+      span:first-child {
+        text-align: right;
+      }
       span:last-child {
         padding-top: 5px;
         color: #707070;
@@ -124,13 +128,20 @@ main {
       &:active {
         box-shadow: 0 0 0 1px #D57D26;
       }
-      &:last-child {
-        grid-column-start: 1;
-        grid-column-end: 4;
-      }
-      &:nth-last-child(4) {
+      &:nth-last-child(1),
+      &:nth-last-child(3) {
         font-size: 15px;
       }
     }
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    flex-direction: column;
+  }
+  .left-side .actions {
+    padding-top: 0;
+    padding-bottom: 1rem;
   }
 }

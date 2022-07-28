@@ -1,67 +1,50 @@
 export const BUTTONS = [
   {
     id: 0,
-    name: "1",
-    onClick: () => {}
+    name: "1"
   },
   {
     id: 1,
-    name: "2",
-    onClick: () => {}
+    name: "2"
   },
   {
     id: 2,
-    name: "3",
-    onClick: () => {}
+    name: "3"
   },
   {
     id: 3,
-    name: "4",
-    onClick: () => {}
+    name: "4"
   },
   {
     id: 4,
-    name: "5",
-    onClick: () => {}
+    name: "5"
   },
   {
     id: 5,
-    name: "6",
-    onClick: () => {}
+    name: "6"
   },
   {
     id: 6,
-    name: "7",
-    onClick: () => {}
+    name: "7"
   },
   {
     id: 7,
-    name: "8",
-    onClick: () => {}
+    name: "8"
   },
   {
     id: 8,
-    name: "9",
-    onClick: () => {}
+    name: "9"
   },
   {
     id: 9,
-    name: "CLEAR",
-    onClick: () => {}
+    name: "CLEAR"
   },
   {
     id: 10,
-    name: "0",
-    onClick: () => {}
-  },
-  {
-    id: 11,
-    name: "00",
-    onClick: () => {}
+    name: "0"
   },
   {
     id: 12,
-    name: "ACCEPT",
-    onClick: () => {}
+    name: "ACCEPT"
   }
 ];

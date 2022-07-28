@@ -2,7 +2,7 @@ import React from "react";
 
 interface AccountLabelProps {
   name: string;
-  value: number;
+  value: number | null;
 };
 
 const AccountLabel: React.FC<AccountLabelProps> = ({ name, value }) => (
