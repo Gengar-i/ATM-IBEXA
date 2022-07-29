@@ -9,13 +9,13 @@ interface ActionButtonProps {
 
 const ActionButton: React.FC<ActionButtonProps> = ({ id, selectedActionID, name, handler }) => (
   <div className="actions__button">
-    <span
+    <div
       className={`${(selectedActionID === id) ? "active" : ""} ${name.toLowerCase()}`}
       onClick={() => handler(id, name)}
       role="button"
     >
       {name}
-    </span>
+    </div>
   </div>
 );
 

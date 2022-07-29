@@ -76,7 +76,7 @@ const Main: React.FC = () => {
 
   const withdrawValue = useCallback((amount: number) => {
     if (amount > balance) {
-      setAlertLabel("Not enough money in deposit!");
+      setAlertLabel("Not enough money in balance!");
     } else {
       setBalance(balance - amount);
       setWithdrawed(withdrawed + amount);
@@ -100,7 +100,7 @@ const Main: React.FC = () => {
 
   const handleValueChange = useCallback((number: number) => {
     const newNumber = Number(String(showedValue) + String(number));
-    if (newNumber > 100000) setAlertLabel("You can only deposit or withdraw at onces 100 000");
+    if (newNumber > 100000) setAlertLabel("You can only deposit or withdraw at once 100 000");
     else setShowedValue(newNumber);
   }, [showedValue]);
 
@@ -142,7 +142,9 @@ const Main: React.FC = () => {
           <div className="atm__screen">
             <div className="atm__screen__content">
               <span>{currency.name}</span>
-              <span className={isDeposit ? "green" : "red"}>{showedValue}</span>
+              <span data-testid="atm-screen" className={isDeposit ? "green" : "red"}>
+                {showedValue}
+              </span>
             </div>
           </div>
           <div className="atm__wrapper">

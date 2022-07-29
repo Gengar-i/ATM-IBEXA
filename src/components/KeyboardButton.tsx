@@ -8,6 +8,7 @@ interface KeyboardButtonProps {
 
 const KeyboardButton: React.FC<KeyboardButtonProps> = ({ id, name, onClick }) => (
   <div
+    data-testid={`atm-button-${name.toLowerCase()}`}
     className={`atm__button button-${id}`}
     onClick={onClick}
     role="button"

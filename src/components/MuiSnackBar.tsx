@@ -10,7 +10,7 @@ interface SnackBarProps extends SnackbarProps {
 const MuiSnackBar: React.FC<SnackBarProps> = ({ open, autoHideDuration, onClose, label }) => (
   <Snackbar
     open={open}
-    anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+    anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
     autoHideDuration={autoHideDuration}
     onClose={onClose}
   >
